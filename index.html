@@ -33,6 +33,7 @@
 				<ul class="hidden-xs">
 					<li><a href="index.html">Home</a></li>
 					<li class="active"><a href="#">Get in Touch</a></li>
+					</ul>
 				<!-- </ul><button class="menubtnt2"><img class="img-responsive" src="image/search3.png"></button> -->
 				<!-- <div class="header-search">
 					<form role="search" method="get">
@@ -52,14 +53,14 @@
 	<main>
 		<section class="banner2"><img class="img-responsive " src="image/bannerbg.png">
 			<div class="banner-content2 clearfix ">
-				<div class="bannerblock1 wow slideInUp"><img class="img-responsive" src="image/tilt2.png"></div>
-				<div class="bannerblock2 wow slideInUp"><img class="img-responsive center-block" src="image/logo2.png">
+				<div class="bannerblock1 wow "><img class="img-responsive" src="image/tilt2.png"></div>
+				<div class="bannerblock2 wow "><img class="img-responsive center-block" src="image/logo2.png">
 					<h2 class="text-white">Bringing Light and Air to Life</h2>
 					<div class="bannerbtn"><a href="https://api.whatsapp.com/send?phone=7834864894" target="_blank">Get In Touch</a><a href="#tabs">View Products</a></div>
 				</div>
 			</div>
 		</section>
-		<section class="best-seller wow slideInUp">
+		<section id= "main_section" class="best-seller wow ">
 			<div class="container">
 				<div class="row">
 					<div class="container">
@@ -78,22 +79,22 @@
 						<div id="tab-1" class="tab-content current">
 							<div class="row"> 
 								<div class="col-md-4 col-sm-4">
-									<div class="bseller-box">
-										<a href="productdetails.html">
+									<div class="bseller-box " onclick = "openProductDetails('led bulb/9w.png')" >
+										<a>
 									 	<img class="img-responsive" src="image/9w.png">
 										9W<span>Bulb</span></a>
 									</div>
 								</div>
 								<div class="col-md-4 col-sm-4">
-									<div class="bseller-box">
-										<a href="productdetails.html"> <img class="img-responsive " src="image/b3.jpg">
+									<div class="bseller-box" onclick = "openProductDetails('led Panel/polo/b3.jpg')">
+										<a> <img class="img-responsive " src="image/b3.jpg">
 										 <span>15W + 20W</span></a>
 									</div>
 								</div>
 								<div class="col-md-4 col-sm-4">
-									<div class="bseller-box">
+									<div class="bseller-box" onclick = "openProductDetails('led bulb/45led.png')">
 										<img class="img-responsive " src="image/45led.png">
-										<a href="#">45+30W<span>LED Bulb</span></a>
+										<a >45+30W<span>LED Bulb</span></a>
 									</div>
 								</div>
 								 
@@ -103,21 +104,21 @@
 						<div id="tab-2" class="tab-content">
 							<div class="row"> 
 								<div class="col-md-4 col-sm-4">
-									<div class="bseller-box">
+									<div class="bseller-box" onclick = "openProductDetails('fan/bulletplus.jpg')">
 										<img class="img-responsive " src="products/fan/bulletplus.jpg">
-										<a href="#"><span>Bullet Plus Blue</span></a>
+										<a><span>Bullet Plus Blue</span></a>
 									</div>
 								</div>
 								<div class="col-md-4 col-sm-4">
-									<div class="bseller-box">
+									<div class="bseller-box" onclick = "openProductDetails('fan/poloplus.jpg')">
 										<img class="img-responsive"  src="products/fan/poloplus.jpg">
-										<a href="#"><span>Polo Plus</span></a>
+										<a><span>Polo Plus</span></a>
 									</div>
 								</div>
 								<div class="col-md-4 col-sm-4">
-									<div class="bseller-box">
+									<div class="bseller-box" onclick = "openProductDetails('fan/regalia.jpg')">
 										<img class="img-responsive"  src="products/fan/regalia.jpg">
-										<a href="#"><span>Regalia</span></a>
+										<a ><span>Regalia</span></a>
 									</div>
 								</div>
 								 
@@ -126,9 +127,9 @@
 						<div id="tab-3" class="tab-content">
 							<div class="row"> 
 								<div class="col-md-4 col-sm-4">
-									<div class="bseller-box">
-										<a href="#"> <img class="img-responsive " src="image/15wpanel.png">
-										15 <span>LED Panel</span></a>
+									<div class="bseller-box" onclick = "openProductDetails('led Panel/15wpanel.png')">
+										<a> <img class="img-responsive " src="image/15wpanel.png">
+										15 <span>LED Panel</span></ahref>
 									</div>
 								</div> 
 							</div>
@@ -136,28 +137,27 @@
 						<div id="tab-4" class="tab-content">
 							<div class="row"> 
 								<div class="col-md-4 col-sm-4">
-									<div class="bseller-box">
-										<a href="#"> <img class="img-responsive " src="products/switch/p1.jpg">
+									<div class="bseller-box" onclick = "openProductDetails('switch/p1.jpg')">
+										<a> <img class="img-responsive " src="products/switch/p1.jpg"><span>Switch 1</span></a>
+									</div>
+								</div> 
+								
+								<div class="col-md-4 col-sm-4">
+									<div class="bseller-box" onclick = "openProductDetails('switch/p2.jpg')">
+										<a> <img class="img-responsive " src="products/switch/p2.jpg">
 										  <span>Switch 1</span></a>
 									</div>
 								</div> 
 								
 								<div class="col-md-4 col-sm-4">
-									<div class="bseller-box">
-										<a href="#"> <img class="img-responsive " src="products/switch/p2.jpg">
+									<div class="bseller-box" onclick = "openProductDetails('switch/p3.jpg')">
+										<a> <img class="img-responsive " src="products/switch/p3.jpg">
 										  <span>Switch 1</span></a>
 									</div>
 								</div> 
 								
 								<div class="col-md-4 col-sm-4">
-									<div class="bseller-box">
-										<a href="#"> <img class="img-responsive " src="products/switch/p3.jpg">
-										  <span>Switch 1</span></a>
-									</div>
-								</div> 
-								
-								<div class="col-md-4 col-sm-4">
-									<div class="bseller-box">
+									<div class="bseller-box" onclick = "openProductDetails('switch/p4.jpg')">
 										<a href="#"> <img class="img-responsive " src="products/switch/p4.jpg">
 										  <span>Switch 1</span></a>
 									</div>
@@ -167,32 +167,38 @@
 
 					</div>
 				</div>
-				<!-- <div class="row"> 
-					<div class="col-md-4 col-sm-4">
-						<div class="bseller-box">
-							<img class="img-responsive " src="image/9w.png">
-							<a href="#">9W<span>Bulb</span></a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-4">
-						<div class="bseller-box">
-							<img class="img-responsive " src="image/15wpanel.png">
-							<a href="#">15W + 20W<span>LED Panel</span></a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-4">
-						<div class="bseller-box">
-							<img class="img-responsive " src="image/45led.png">
-							<a href="#">45+30W<span>LED Bulb</span></a>
-						</div>
-					</div>
-					<div class="col-md-12 col-sm-12">
-						<div class="readmore"><a href="#">View All Products <span><i class="fa fa-caret-right"
-										aria-hidden="true"></i></span></a></div>
-					</div>
-				</div> -->
 			</div>
 		</section>
+
+		<section id ="productDetail" id="for_scroll" class="best-seller wow details" style="display:none;">
+            <div class="container">
+                <div class="row">
+                    <div class="container">
+                        <div class="col-md-5 col-sm-12 text-center">
+                            <img id ="productImage" class="img-responsive border mb-2"/>
+                        </div>
+                        <div class="col-md-7 col-sm-12 text-justify">
+                            <h3 id = "productName" class="mt-0"></h3>
+                            <h5>Product Specifications </h5>
+                             <table width="100%" class="specification-table stripped-table">
+                                <tr><td width="50%">Material</td> <td>Polycarbonate</td></tr>
+                                <tr><td>Power Rating </td> <td>100 - 130 W </td></tr>
+                                <tr><td>Usage/Application </td> <td>Ceiling Fan </td></tr>
+                                <tr><td>Color </td> <td>White </td></tr>
+                                <tr><td>Fan Speed Step </td> <td>5 Step</td></tr>
+                                <tr><td>Model Name/Number </td> <td>Penta </td></tr>
+                                <tr><td>Frequency </td> <td>50 Hz </td></tr>
+                                <tr><td>Voltage </td> <td>240 V AC" </td></tr>
+                             </table>
+                            <a href="tel:999999999999" class="callbtn"><i class="fa fa-phone" aria-hidden="true"></i> Call Now </a>
+                            <a href="tel:999999999999" class="whatsappbtn"><i class="fa fa-whatsapp" aria-hidden="true"></i> Whats App </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
 		 
 	</main>
 	<footer>
@@ -201,7 +207,7 @@
 				<div class="row">
 					<div class="col-md-8 col-sm-7">
 						<div class="footer-left">
-							<div class="footer-logo"><img class="img-responsive" src="image/flogo.png" width="100">
+							<div class="footer-logo"><img class="img-responsive" src="image/flogo.png" width= 100%>
 							</div>
 							<ul>
 								<li><a href="index.html">Home</a></li> 
@@ -227,7 +233,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="copyright-content">
-							<p><span>&copy; Copyright 2023</p>
+							<p><span>&copy; Copyright 2023</span></p>
 						</div>
 					</div>
 				</div>
@@ -272,7 +278,7 @@
 				$("#lodpopup").fadeOut();
 			}
 
-				, 3000);
+				, 300);
 
 		});
 
@@ -303,7 +309,4 @@
 		})
 	</script>
 </body>
-
-
-<!-- Mirrored from getpolicyonline.com/hipton/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 27 Aug 2023 04:12:48 GMT -->
 </html>
